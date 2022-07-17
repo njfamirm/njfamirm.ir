@@ -1,0 +1,20 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.238.1/containers/debian
+{
+   "name": "njfamirm-ir",
+   "build": {
+     "dockerfile": "Dockerfile",
+     "args": { "VARIANT": "bullseye" }
+   },
+
+   // Use 'forwardPorts' to make a list of ports inside the container available locally.
+   // "forwardPorts": [],
+
+   "remoteUser": "vscode",
+
+   "features": {
+     "docker-in-docker": "latest",
+     "git": "latest",
+     "github-cli": "latest"
+   }
+}
