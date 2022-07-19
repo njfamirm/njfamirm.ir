@@ -4,3 +4,6 @@ ARG VARIANT="1.18-bullseye"
 FROM mcr.microsoft.com/vscode/devcontainers/go:0-${VARIANT}
 
 RUN apt-get update
+
+# Install go tool
+RUN go install golang.org/x/tools/gopls@latest
